@@ -22,7 +22,7 @@ fn main() {
     // proof generation
     let prover_circuit = SquareRootCircuit {
         x: Some(Scalar::from(81u64)),
-        root: Some(Scalar::from(7u64)),
+        root: Some(Scalar::from(9u64)),
     };
 
     let proof = create_random_proof(prover_circuit, &params, rng).expect("Proof generation failed");
