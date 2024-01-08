@@ -30,5 +30,7 @@ fn main() {
     //proof verification
     let pvk = prepare_verifying_key(&params.vk);
 
-    verify_proof(&pvk, &proof, &[]).expect("Proof verification failed");
+    let public_input = vec![Scalar::from(81u64)]; // defining the public input (our x value)
+
+    verify_proof(&pvk, &proof, &public_input).expect("Proof verification failed");
 }

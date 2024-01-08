@@ -4,5 +4,4 @@ The `bellman` crate is a Rust library for building zk-SNARKs, providing a modula
 
 # Circuits
 
-- `SquareRootCircuit`: to generate a proof that we know the square root of a value without disclosing the root value.
-
+- `SquareRootCircuit`: to generate a proof that we know the square root of a value `x` without disclosing the root value.
